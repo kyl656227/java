@@ -38,5 +38,11 @@ public class StringMethod2 {
             } else{
                 System.out.println("ssn에 88이 없음");
             }
+
+        String board = "번호,제목,내용,성명";
+        String[] arr = board.split(","); //콤마 기준으로 값을 나눠서 지정해줌
+        for(int i=0; i<arr.length; i++){
+            System.out.printf("arr[%d]: %s\n", i, arr[i]);
+        }
         }
     }

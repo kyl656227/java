@@ -1,0 +1,30 @@
+package ch05.sec05;
+
+import java.util.Arrays;
+
+public class ArrayDeepCopy {
+    public static void main(String [] args){
+        int[] arr= { 10, 8, 88, 1, 100, 14, 200 };
+        int[] arr2 = arr;
+
+        arr2[1] = 77;
+
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr2));
+
+        System.out.println("-----------------");
+        // arr과 똑같은 값을 가지고 있는 새로운 배열을 만듦.
+        // 먼저 똑같은 크기의 배열을 만들어야함
+
+
+        int[] arr3 = new int[arr.length] ;
+        System.out.println(Arrays.toString(arr3));
+
+        for( int i=0; i<arr.length; i++){
+            arr3[i] = arr[i];
+        }
+        System.out.println("arr3:" + Arrays.toString(arr3));
+    }
+}
+
+

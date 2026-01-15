@@ -10,5 +10,7 @@ public class Mission01 {
         String newStr1 = fileNm.substring(a + 1);
         System.out.println("newStr:" + newStr1);
 
+
+
     }
 }
