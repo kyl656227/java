@@ -17,4 +17,16 @@ public class PrintStarTriangle {
     }
 
 
+    //  역삼각형
+//  for (int i = star; i >= 1; i--) {
+//
+//            // i의 값만큼 별을 출력합니다.
+//            for (int a = 0; a < i; a++) {
+//                System.out.print("*");
+//            }
+//
+//            System.out.println(); // 줄바꿈
+//        }
+//    }
+//}
 
