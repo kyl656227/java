@@ -1,0 +1,50 @@
+package ch06.sec03;
+
+import javax.rmi.ssl.SslRMIClientSocketFactory;
+
+/* 객체는 js에서 속성과 메소드라고 이루어져있었는데,
+자바에서는 속성: 멤버필드, 전역(변수/상수), 역할: 값 저장, 객체가 살아있는 동안 값이 유지됨.
+메소드: 멤버메소드 라고 부름. 역할: 변화 action
+
+클래스는 객체가 아니다. 틀(frame), 설계도 같은 것.
+클래스로 실체를 만들면 그게 객체(object, instance)가 된다.
+
+작성 순서는 아래 순서대로 배치
+멤버필드
+생성자
+메소드
+
+생성자 vs 메소드 다른점 2가지
+1. 이름은 클래스명과 동일
+2. 리턴타입이 없다.
+
+생성자의 역할: 객체생성 + 멤버필드 초기화
+
+ */
+public class Student {
+    int no;
+    String name;
+
+
+
+    public Student() { //기본 생성자 정의
+        this(0, "홍길동"); // this() 다른 생성자 호출, 항상 최상위에서 호출.
+        System.out.println("---Student 기본 생성자---");
+//        this.no = 0;
+//        this.name = "홍길동";
+    }
+    public Student(int no, String name) { //오버로딩 생성자
+        System.out.println("---Student 기본생성자---");
+        this.no = no;
+        this.name = name;
+    }
+    public  Student(String bbb, int aaa){
+        this.no = aaa;
+        this.name = bbb;
+    }
+
+    void introduceMySelf(){
+        System.out.printf("저는 %d번이고 이름은 %s입니다.\n", no, name);
+    }
+
+}
