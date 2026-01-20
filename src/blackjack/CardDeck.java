@@ -1,4 +1,7 @@
 package blackjack;
+
+import ch06.sec09.Car;
+
 // 카드통
 public class CardDeck {
     // Card 객체 주소값 52개를 담을 수 있어야 함.
@@ -14,10 +17,10 @@ public class CardDeck {
     }
     private void init() {
         int idx = 0;
-        for(int i=0; i<patterns.length; i++){
+        for(int i=0; i<patterns.length; i++){ //4
             String pattern = patterns[i];
 
-            for(int d=1; d<=13; d++){
+            for(int d=1; d<=13; d++){ //13
                 String denomination = String.valueOf(d); //점수 > 문자열
                 switch(d){
                     case 1: denomination = "A"; break;
@@ -29,7 +32,8 @@ public class CardDeck {
                 cards[idx++] = c;
             }
         }
-        for(Card c : cards){
+        for(int i=0; i<cards.length; i++){
+            Card c = cards[i];
             System.out.printf("%s - %s\n", c.getPattern(), c.getDenomination());
         }
     }
