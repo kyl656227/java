@@ -14,19 +14,5 @@ public class StarMain2 {
         Marine m4 = new Marine();
         Marine m5 = new Marine();
 
-        Dropship dropship = new Dropship();
-        dropship.load(t1);
-        dropship.load(t3);
-        dropship.load(m2);
-        dropship.load(m4);
-        dropship.load(t2);
-        dropship.load(m1);
-        dropship.load(m3);
-        dropship.load(m5);
-        dropship.load(t4);
-        dropship.check();
-
-        Unit u1 = dropship.unload(2);
-
     }
 }

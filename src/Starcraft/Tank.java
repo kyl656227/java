@@ -5,7 +5,9 @@ public class Tank extends Unit {
 
 
     public void changeMode(){
-        isSiegMode = !isSiegMode;
+        isSiegMode = !isSiegMode; //false라면 true로 바꿈
+
+        // 바꾼 값을 다시 원래대로 돌림.
        System.out.printf("시즈모드 %s\n", (isSiegMode = !isSiegMode) ? "ON" : "OFF");
     }
 
